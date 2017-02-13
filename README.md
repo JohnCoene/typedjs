@@ -3,8 +3,9 @@
 
 # typed
 
-R implementation of [typed.js](https://github.com/mattboldt/typed.js/) for Rmarkdown.
 ![countup](http://johncoene.github.io/projects/img/modals/typed.gif)
+
+R implementation of [typed.js](https://github.com/mattboldt/typed.js/) for Rmarkdown.
 
 ## Installation
 
