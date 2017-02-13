@@ -1,6 +1,6 @@
 #' type
 #'
-#' type
+#' jQuery plugin that types.
 #'
 #' @param type Sentences to type, must be character vector.
 #' @param typeSpeed Typing speed defaults to \code{0}.

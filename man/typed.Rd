@@ -21,7 +21,7 @@ string and have \code{'px'} appended.}
 \item{elementId}{Use specific element id.}
 }
 \description{
-type
+jQuery plugin that types.
 }
 \examples{
 \dontrun{
