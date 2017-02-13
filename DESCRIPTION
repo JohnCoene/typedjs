@@ -1,0 +1,14 @@
+Package: typed
+Title: R implementation of typed.js
+Version: 0.0.0.9000
+Authors@R: person("John", "Coene", email = "jcoenep@gmail.com", role = c("aut", "cre"))
+Description: R implementation of typed.js.
+Depends:
+    R (>= 3.3.2)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    htmlwidgets,
+    htmltools
+RoxygenNote: 5.0.1
