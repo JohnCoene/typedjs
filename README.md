@@ -1,9 +1,9 @@
 [![Travis-CI Build Status](https://travis-ci.org/JohnCoene/typed.svg?branch=master)](https://travis-ci.org/JohnCoene/typed)
 [![saythanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/JohnCoene)
 
-# typed
-
 ![countup](http://johncoene.github.io/projects/img/modals/typed.gif)
+
+# typed
 
 R implementation of [typed.js](https://github.com/mattboldt/typed.js/) for Rmarkdown.
 
