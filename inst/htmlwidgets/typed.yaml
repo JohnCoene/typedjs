@@ -9,7 +9,3 @@ dependencies:
    script: typed.min.js
    stylesheet:
       - cursor.css
- - name: waypoints
-   version: 4.0.1
-   src: htmlwidgets/lib/waypoints-4.0.1
-   script: noframework.waypoints.min.js

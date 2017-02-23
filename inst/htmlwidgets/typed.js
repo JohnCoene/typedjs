@@ -10,23 +10,17 @@ HTMLWidgets.widget({
 
       renderValue: function(x) {
 
-        if (jQuery.type( x.tp ) === "string")
-          var type = Array(x.tp);
+        if (jQuery.type( x.type ) === "string")
+          var type = Array(x.type);
         else
-          var type = x.tp;
+          var type = x.type;
 
-        var waypoint = new Waypoint({
-          element: document.getElementById(el.id),
-          handler: function() {
-            $(function(){
-                $('#' + el.id).typed({
-                  strings: type,
-                  typeSpeed: x.typeSpeed,
-                  contentType: x.contentType
-                });
+        $(function(){
+            $('#' + el.id).typed({
+              strings: type,
+              typeSpeed: x.typeSpeed,
+              contentType: x.contentType
             });
-          },
-          offset: x.offset
         });
 
       },
