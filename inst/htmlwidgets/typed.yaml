@@ -1,17 +1,15 @@
 dependencies:
- - name: waypoints
-   version: 2.0.3
-   src: htmlwidgets/lib/waypoints-2.0.3
-   script: waypoints.min-2.0.3.js
- - name: jquery
-   version: 3.1.1
-   src: htmlwidgets/lib/jquery-3.1.1
-   script: jquery-3.1.1.min.js
- - name: jquery
-   version: 3.1.1
-   src: htmlwidgets/lib/jquery-3.1.1
-   script: jquery-3.1.1.min.js
+ - name: jQuery
+   version: 1.9.1
+   src: htmlwidgets/lib/jQuery-1.9.1
+   script: jquery.min.js
  - name: typed
    version: 1.0
    src: htmlwidgets/lib/typed-1.0
-   script: typed.js
+   script: typed.min.js
+   stylesheet:
+      - cursor.css
+ - name: waypoints
+   version: 4.0.1
+   src: htmlwidgets/lib/waypoints-4.0.1
+   script: noframework.waypoints.min.js

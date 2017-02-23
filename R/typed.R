@@ -28,7 +28,7 @@ typed <- function(type, typeSpeed = 0, contentType = 'html', width = NULL, heigh
 
   # forward options using x
   x = list(
-    type = type,
+    tp = type,
     typeSpeed = typeSpeed,
     contentType = contentType
   )
