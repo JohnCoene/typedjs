@@ -1,8 +1,8 @@
 Package: typed
-Title: R implementation of typed.js
-Version: 0.0.0.9000
+Title: R htmlwidget for typed.js
+Version: 0.0.1
 Authors@R: person("John", "Coene", email = "jcoenep@gmail.com", role = c("aut", "cre"))
-Description: R implementation of typed.js.
+Description: R htmlwidget for typed.js.
 Depends:
     R (>= 3.3.2)
 License: MIT + file LICENSE

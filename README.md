@@ -22,6 +22,10 @@ typed("Emphasis word <span style ='color: red;'>with html</span>.", contentType 
 typed(c("First sentence.", "Second sentence", typeSpeed = 2))
 ```
 
+## Waypoints
+
+The htmlwidget uses jQuery waypoints.js to trigger the typing, see `offset` argument.
+
 ---------------------------------------------------------
 
 See [my other projects](http://johncoene.github.io/projects/)

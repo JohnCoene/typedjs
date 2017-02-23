@@ -26,7 +26,7 @@ HTMLWidgets.widget({
                 });
             });
           },
-          offset: "10%"
+          offset: x.offset
         });
 
       },

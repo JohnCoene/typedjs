@@ -4,8 +4,8 @@
 \alias{typed}
 \title{type}
 \usage{
-typed(type, typeSpeed = 0, contentType = "html", width = NULL,
-  height = NULL, elementId = NULL)
+typed(type, typeSpeed = 0, contentType = "html", offset = "10\%",
+  width = NULL, height = NULL, elementId = NULL)
 }
 \arguments{
 \item{type}{Sentences to type, must be character vector.}
@@ -13,6 +13,9 @@ typed(type, typeSpeed = 0, contentType = "html", width = NULL,
 \item{typeSpeed}{Typing speed defaults to \code{0}.}
 
 \item{contentType}{Content type, defaults to \code{html} can also be set to \code{text}.}
+
+\item{offset}{By default the typing triggers when \code{10\%} of the element
+hits the top of the window. Can also be set to pixels (\code{px}), see details and note.}
 
 \item{width, height}{Must be a valid CSS unit (like \code{'100\%'},
 \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
@@ -22,6 +25,15 @@ string and have \code{'px'} appended.}
 }
 \description{
 jQuery plugin that types.
+}
+\details{
+The widget includes jQuery waypoints.js, the offset argument is passed to
+to the waypoint: \url{http://imakewebthings.com/waypoints/guides/getting-started/}. See note.
+}
+\note{
+The offset defaulting to \code{10\%} is a workaround to have it work
+in RStudio viewer. It should not be a problem in Rmarkdown unless your
+widget is placed at the very bottom of your document.
 }
 \examples{
 \dontrun{
