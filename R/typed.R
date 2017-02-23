@@ -29,10 +29,13 @@ typed <- function(type, typeSpeed = 0, contentType = 'html', ...,
 
   # forward options using x
 
-  x <- list(...)
-  x$type <- type
-  x$typeSpeed <- typeSpeed
-  x$contentType <- contentType
+  x <- list(
+    type = type,
+    typeSpeed = typeSpeed,
+    contentType = contentType
+  )
+
+  x <- append(x, list(...))
 
   # create widget
   htmlwidgets::createWidget(
