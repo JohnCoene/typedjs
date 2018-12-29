@@ -7,15 +7,16 @@ R implementation of [typed.js](https://github.com/mattboldt/typed.js/) for Rmark
 
 ## Installation
 
-```R
+```r
 # install.packages("devtools")
 devtools::install_github("JohnCoene/typed")
 ```
 
 ## Example
 
-```R
+```r
 typed("Hello")
 typed("Emphasis word <span style ='color: red;'>with html</span>.", contentType = "html")
-typed(c("First sentence.", "Second sentence", typeSpeed = 2))
+typed(c("First sentence.", "Second sentence"), typeSpeed = 2)
 ```
+
