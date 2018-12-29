@@ -5,8 +5,6 @@
 
 R implementation of [typed.js](https://github.com/mattboldt/typed.js/) for Rmarkdown.
 
-See [site](http://john-coene.com/typed) for all details.
-
 ## Installation
 
 ```R
@@ -21,7 +19,3 @@ typed("Hello")
 typed("Emphasis word <span style ='color: red;'>with html</span>.", contentType = "html")
 typed(c("First sentence.", "Second sentence", typeSpeed = 2))
 ```
-
----------------------------------------------------------
-
-See [my other projects](http://johncoene.github.io/projects/)
