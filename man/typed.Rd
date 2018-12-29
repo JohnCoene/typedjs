@@ -4,17 +4,15 @@
 \alias{typed}
 \title{type}
 \usage{
-typed(type, typeSpeed = 0, contentType = "html", ..., width = NULL,
+typed(strings, ..., contentType = "html", width = NULL,
   height = NULL, elementId = NULL)
 }
 \arguments{
-\item{type}{Sentences to type, must be character vector.}
+\item{strings}{Sentences to type, must be character vector.}
 
-\item{typeSpeed}{Typing speed defaults to \code{0}.}
+\item{...}{Any other options from \url{https://github.com/mattboldt/typed.js/#customization}.}
 
 \item{contentType}{Content type, defaults to \code{html} can also be set to \code{text}.}
-
-\item{...}{Any other options.}
 
 \item{width, height}{Must be a valid CSS unit (like \code{'100\%'},
 \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
@@ -34,4 +32,3 @@ typed(c("First sentence.", "Second sentence"), typeSpeed = 2)
 }
 
 }
-

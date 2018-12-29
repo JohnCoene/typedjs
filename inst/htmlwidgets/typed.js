@@ -9,19 +9,8 @@ HTMLWidgets.widget({
     return {
 
       renderValue: function(x) {
-
-        if (jQuery.type( x.type ) === "string")
-          var type = Array(x.type);
-        else
-          var type = x.type;
-
-        $(function(){
-            $('#' + el.id).typed({
-              strings: type,
-              typeSpeed: x.typeSpeed,
-              contentType: x.contentType
-            });
-        });
+        
+        var typed = new Typed("#" + el.id, x);
 
       },
 

@@ -2,10 +2,9 @@
 #'
 #' jQuery plugin that types.
 #'
-#' @param type Sentences to type, must be character vector.
-#' @param typeSpeed Typing speed defaults to \code{0}.
+#' @param strings Sentences to type, must be character vector.
 #' @param contentType Content type, defaults to \code{html} can also be set to \code{text}.
-#' @param ... Any other options.
+#' @param ... Any other options from \url{https://github.com/mattboldt/typed.js/#customization}.
 #' @param width,height Must be a valid CSS unit (like \code{'100\%'},
 #'   \code{'400px'}, \code{'auto'}) or a number, which will be coerced to a
 #'   string and have \code{'px'} appended.
@@ -22,20 +21,18 @@
 #' @import htmlwidgets
 #'
 #' @export
-typed <- function(type, typeSpeed = 0, contentType = 'html', ...,
+typed <- function(strings, ..., contentType = 'html',
                   width = NULL, height = NULL, elementId = NULL) {
 
-  if(missing(type)) stop("must pass type")
+  if(missing(strings)) stop("must pass strings")
 
   # forward options using x
 
   x <- list(
-    type = type,
-    typeSpeed = typeSpeed,
-    contentType = contentType
+    strings = as.list(strings),
+    contentType = contentType,
+    ...
   )
-
-  x <- append(x, list(...))
 
   # create widget
   htmlwidgets::createWidget(
