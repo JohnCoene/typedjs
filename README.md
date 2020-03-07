@@ -8,8 +8,8 @@ R implementation of [typed.js](https://github.com/mattboldt/typed.js/) for Rmark
 ## Installation
 
 ```r
-# install.packages("devtools")
-devtools::install_github("JohnCoene/typed")
+# install.packages("remotes")
+remotes::install_github("JohnCoene/typed")
 ```
 
 ## Example
