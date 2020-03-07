@@ -17,6 +17,6 @@ remotes::install_github("JohnCoene/typed")
 ```r
 typed("Hello")
 typed("Emphasis word <span style ='color: red;'>with html</span>.", contentType = "html")
-typed(c("First sentence.", "Second sentence"), typeSpeed = 2)
+typed(list(shiny::h3("First sentence."), shiny::h4("Second sentence")), typeSpeed = 2)
 ```
 

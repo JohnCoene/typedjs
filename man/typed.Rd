@@ -4,8 +4,14 @@
 \alias{typed}
 \title{type}
 \usage{
-typed(strings, ..., contentType = "html", width = NULL,
-  height = NULL, elementId = NULL)
+typed(
+  strings,
+  ...,
+  contentType = "html",
+  width = NULL,
+  height = NULL,
+  elementId = NULL
+)
 }
 \arguments{
 \item{strings}{Sentences to type, must be character vector.}

@@ -25,11 +25,12 @@ typed <- function(strings, ..., contentType = 'html',
                   width = NULL, height = NULL, elementId = NULL) {
 
   if(missing(strings)) stop("must pass strings")
+  strings <- purrr::map(strings, as.character)
 
   # forward options using x
 
   x <- list(
-    strings = as.list(strings),
+    strings = strings,
     contentType = contentType,
     ...
   )
