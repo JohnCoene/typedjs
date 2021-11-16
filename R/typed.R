@@ -41,7 +41,7 @@ typed <- function(strings, ..., contentType = 'html',
     x,
     width = width,
     height = height,
-    package = 'typed',
+    package = 'typedjs',
     elementId = elementId
   )
 }
@@ -68,7 +68,7 @@ typed_html <- function(id, style, class, ...){
 #'
 #' @export
 typedOutput <- function(outputId, width = '100%', height = '400px'){
-  htmlwidgets::shinyWidgetOutput(outputId, 'typed', width, height, package = 'typed')
+  htmlwidgets::shinyWidgetOutput(outputId, 'typed', width, height, package = 'typedjs')
 }
 
 #' @rdname typed-shiny
