@@ -1,8 +1,8 @@
 Package: typedjs
-Title: R htmlwidget for typed.js
+Title: 'Typed.js' for 'Shiny' to Animate Text
 Version: 0.0.3
 Authors@R: person("John", "Coene", email = "jcoenep@gmail.com", role = c("aut", "cre"))
-Description: R htmlwidget for typed.js.
+Description: Use 'Typed.js' in 'Shiny' to animate text elements.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
